@@ -9,3 +9,5 @@ Uygulamayı çalıştırmanız için application.yml dosyasının içindeki user
 Projede Layered Architecture'ı tercih ettim, yaygın kullanılan bir mimari olduğu için. User ile Credit arasında OneToOne ilişki kurmuştum fakat insert ederken hata alıyordum, düzeltmeye çalıştığımda bu sefer fazladan kayıt atılıyordu yada foreign key değeri yazılmıyordu o yüzden tablolar arası ilişki kurmadan devam etmek zorunda kaldım.
 
 Security kullandığım için  Integration testde Header'a token geçmem lazımdı fakat uzun süreli bir token oluşturamadığım için CreditControllerTest'i çalıştırmadan önce SecurityConfiguration' da ```.antMatchers("/credit").permitAll()``` kısmını comment'ten çıkarmak gerekiyor.
+
+http://localhost:8080/swagger-ui.html#/
